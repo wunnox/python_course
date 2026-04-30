@@ -1,0 +1,24 @@
+site_name: Python Documentation
+
+theme:
+  name: material
+
+nav:
+  - Deutsch:
+      - Start: index.md
+      - Grundlagen:
+          - Dekoratoren: basics/dekoratoren.md
+          - try-except: basics/try_except.md
+      - Module:
+          - Keyring: modules/module_keyring.md
+      - OOP:
+          - Datenklassen: oop/datenklassen.md
+  - English:
+      - Home: index.en.md
+      - Basics:
+          - Decorators: basics/dekoratoren.en.md
+          - try-except: basics/try_except.en.md
+      - Modules:
+          - Keyring: modules/module_keyring.en.md
+      - OOP:
+          - Data classes: oop/datenklassen.en.md
