@@ -7,18 +7,49 @@ nav:
   - Deutsch:
       - Start: index.md
       - Grundlagen:
+          - Comprehensions: basics/comprehensions.md
+          - CSV-Dateien: basics/csv.md
           - Dekoratoren: basics/dekoratoren.md
-          - try-except: basics/try_except.md
+          - Generatoren: basics/generatoren.md
+          - Iteratoren: basics/iteratoren.md
+          - Json: basics/json.md
+          - Paketieren: basics/python_packages.md
+          - Try-Except: basics/try_except.md
+
       - Module:
+          - Logger: modules/module_logger.md
           - Keyring: modules/module_keyring.md
+          - Openpyxl: modules/module_openpyxl.md
+          - Pickle: modules/module_pickle.md
+          - Time: modules/module_time.md
       - OOP:
           - Datenklassen: oop/datenklassen.md
+      - Scripts:
+          - csv2db: scripts/csv2db.md
+          - db2csv: scripts/db2csv.md
+          - excel2db: scripts/excel2db.md
+          - db2excel: scripts/db2excel.md
   - English:
       - Home: index.en.md
       - Basics:
+          - Comprehensions: basics/comprehensions.en.md
+          - CSV Files: basics/csv.en.md
           - Decorators: basics/dekoratoren.en.md
-          - try-except: basics/try_except.en.md
+          - Generators: basics/generatoren.en.md
+          - Iterators: basics/iteratoren.en.md
+          - Json: basics/json.en.md
+          - Packages: basics/python_packages.en.md
+          - Try-Except: basics/try_except.en.md
       - Modules:
+          - Logger: modules/module_logger.en.md
           - Keyring: modules/module_keyring.en.md
+          - Openpyxl: modules/module_openpyxl.en.md
+          - Pickle: modules/module_pickle.en.md
+          - Time: modules/module_time.en.md
       - OOP:
           - Data classes: oop/datenklassen.en.md
+      - Scripts:
+          - csv2db: scripts/csv2db.en.md
+          - db2csv: scripts/db2csv.en.md
+          - excel2db: scripts/excel2db.en.md
+          - db2excel: scripts/db2excel.en.md

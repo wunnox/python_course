@@ -3,7 +3,7 @@ def handle_exceptions(func):
         try:
             return func(*args, **kwargs)
         except Exception as e:
-            print(f"Error in der Function {func.__name__}: {str(e)}, return 1")
+            print(f"Error in Function {func.__name__}: {str(e)}, return 1")
             return 1
     return wrapper
 

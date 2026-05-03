@@ -5,15 +5,15 @@ def timer_decorator(func):
         start_time = time.time()
         result = func(*args, **kwargs)
         end_time = time.time()
-        print(f"Runtime of {func.__name__}: {end_time - start_time} Seconds")
+        print(f"Runtime of {func.__name__}: {round(end_time - start_time,6)} Seconds")
         return result
     return wrapper
     
 @timer_decorator
-def quadrat(n):
+def square(n):
    for i in n:
       yield (i*i)
       
-res=quadrat([10,20,30,40])
-for num in res:
-   print(num)
+res=square([10,20,30,40])
+for number in res:
+   print(number)
