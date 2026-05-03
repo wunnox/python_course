@@ -29,6 +29,11 @@ nav:
           - db2csv: scripts/db2csv.md
           - excel2db: scripts/excel2db.md
           - db2excel: scripts/db2excel.md
+      - Performance:
+          - process_single: performance/process_single.md
+          - process_multi: performance/process_multi.md
+          - process_pool: performance/process_pool.md
+          - process_concurrent: performance/process_concurrent.md
   - English:
       - Home: index.en.md
       - Basics:
@@ -53,3 +58,8 @@ nav:
           - db2csv: scripts/db2csv.en.md
           - excel2db: scripts/excel2db.en.md
           - db2excel: scripts/db2excel.en.md
+      - Performance:
+          - process_single: performance/process_single.en.md
+          - process_multi: performance/process_multi.en.md
+          - process_pool: performance/process_pool.en.md
+          - process_concurrent: performance/process_concurrent.en.md
