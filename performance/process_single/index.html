@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../db2csv/">
+        <link rel="prev" href="../../scripts/db2excel/">
       
       
-        <link rel="next" href="../db2excel/">
+        <link rel="next" href="../process_multi/">
       
       
         
@@ -23,7 +23,7 @@
     
     
       
-        <title>excel2db - Python Documentation</title>
+        <title>process_single - Python Documentation</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#excel2db" class="md-skip">
+        <a href="#prozessverarbeitung-single-prozess" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              excel2db
+              process_single
             
           </span>
         </div>
@@ -827,20 +827,18 @@
                 
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_5" >
         
           
           <label class="md-nav__link" for="__nav_1_5" id="__nav_1_5_label" tabindex="0">
@@ -861,7 +859,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_1_5">
             <span class="md-nav__icon md-icon"></span>
             
@@ -879,7 +877,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../csv2db/" class="md-nav__link">
+      <a href="../../scripts/csv2db/" class="md-nav__link">
         
   
   
@@ -907,7 +905,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../db2csv/" class="md-nav__link">
+      <a href="../../scripts/db2csv/" class="md-nav__link">
         
   
   
@@ -932,37 +930,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    excel2db
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../scripts/excel2db/" class="md-nav__link">
         
   
   
@@ -978,59 +949,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#benotigte-module" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Benötigte Module
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#excel-beispieldatei-erstellen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Excel Beispieldatei erstellen
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#script" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Script
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1043,7 +961,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../db2excel/" class="md-nav__link">
+      <a href="../../scripts/db2excel/" class="md-nav__link">
         
   
   
@@ -1076,18 +994,20 @@
                 
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_6" checked>
         
           
           <label class="md-nav__link" for="__nav_1_6" id="__nav_1_6_label" tabindex="0">
@@ -1108,7 +1028,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1_6">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1123,10 +1043,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../performance/process_single/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1142,6 +1071,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -1154,7 +1084,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../performance/process_multi/" class="md-nav__link">
+      <a href="../process_multi/" class="md-nav__link">
         
   
   
@@ -1182,7 +1112,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../performance/process_pool/" class="md-nav__link">
+      <a href="../process_pool/" class="md-nav__link">
         
   
   
@@ -1210,7 +1140,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../performance/process_concurrent/" class="md-nav__link">
+      <a href="../process_concurrent/" class="md-nav__link">
         
   
   
@@ -1932,7 +1862,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../csv2db.en/" class="md-nav__link">
+      <a href="../../scripts/csv2db.en/" class="md-nav__link">
         
   
   
@@ -1960,7 +1890,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../db2csv.en/" class="md-nav__link">
+      <a href="../../scripts/db2csv.en/" class="md-nav__link">
         
   
   
@@ -1988,7 +1918,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../excel2db.en/" class="md-nav__link">
+      <a href="../../scripts/excel2db.en/" class="md-nav__link">
         
   
   
@@ -2016,7 +1946,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../db2excel.en/" class="md-nav__link">
+      <a href="../../scripts/db2excel.en/" class="md-nav__link">
         
   
   
@@ -2099,7 +2029,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../performance/process_single.en/" class="md-nav__link">
+      <a href="../process_single.en/" class="md-nav__link">
         
   
   
@@ -2127,7 +2057,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../performance/process_multi.en/" class="md-nav__link">
+      <a href="../process_multi.en/" class="md-nav__link">
         
   
   
@@ -2155,7 +2085,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../performance/process_pool.en/" class="md-nav__link">
+      <a href="../process_pool.en/" class="md-nav__link">
         
   
   
@@ -2183,7 +2113,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../performance/process_concurrent.en/" class="md-nav__link">
+      <a href="../process_concurrent.en/" class="md-nav__link">
         
   
   
@@ -2239,47 +2169,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#benotigte-module" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Benötigte Module
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#excel-beispieldatei-erstellen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Excel Beispieldatei erstellen
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#script" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Script
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -2295,73 +2184,66 @@
 
 
 
-<h1 id="excel2db">excel2db</h1>
-<h2 id="benotigte-module">Benötigte Module</h2>
-<ul>
-<li>openpyxl -&gt; externes Modul, muss von pypi.org geladen werden</li>
-<li>sqlite3 -&gt; in der standard Python-Installation enthalten</li>
-</ul>
-<h2 id="excel-beispieldatei-erstellen">Excel Beispieldatei erstellen</h2>
-<p>Download: <a href="../../examples/modules/module_openpyxl_write.py">module_openpyxl_write.py</a></p>
-<h2 id="script">Script</h2>
-<p>Das Skript liest Daten aus der Excel-Datei <code>example_shares.xlsx</code> ein und importiert sie in eine SQLite-Datenbank <code>example_shares_excel.db</code> in die Tabelle <code>shares</code>.</p>
-<pre><code class="language-python">import sqlite3
-from openpyxl import load_workbook
+<h1 id="prozessverarbeitung-single-prozess">Prozessverarbeitung Single Prozess</h1>
+<p>Dieses Python-Skript berechnet Primzahlen in einem bestimmten Zahlenbereich und misst die Ausführungszeit.</p>
+<pre><code class="language-python">from time import perf_counter
 
-excel_file = 'example_shares.xlsx'
-db_file = 'example_shares_excel.db'
-counter=0
+pc=[]  # Liste für Primzahlenzähler
 
-connection = sqlite3.connect(db_file)
-cursor = connection.cursor()
+def primrechner(ps,pe):
+   '''Primzahlen errechnen'''
 
-cursor.execute(&quot;&quot;&quot;
-CREATE TABLE IF NOT EXISTS shares (
-    title TEXT primary key,
-    swx TEXT,
-    price REAL,
-    dividend REAL,
-    volume INTEGER,
-    monthly_income TEXT
-)
-&quot;&quot;&quot;)
+   print(f&quot;Suche Primzahlen von {ps} bis {pe}&quot;)
+   for z in range(ps,pe+1):
+      pc.append(z)
+      for z2 in range(2,z):
+         if not z%z2: 
+            pc.remove(z)
+            break
 
-# We want the formula not just the value, hence data_only=False
-workbook = load_workbook(excel_file, data_only=False)
-sheet = workbook.active
+### Prozess starten
+start = perf_counter()
+primrechner(1,30000)
 
-for row in sheet.iter_rows(min_row=2, values_only=True):
-    title, swx, price, dividend, volume, monthly_income = row
-
-    # We don't want the header line
-    if title=='Title':
-        continue
-
-    counter+=1
-    cursor.execute(&quot;&quot;&quot;
-    REPLACE INTO shares (title, swx, price, dividend, volume, monthly_income)
-    VALUES (?, ?, ?, ?, ?, ?)
-    &quot;&quot;&quot;, (
-        title,
-        swx,
-        float(price),
-        float(dividend),
-        int(volume),
-        monthly_income
-    ))
-
-connection.commit()
-connection.close()
-
-print(f&quot;{counter} records have been written into the database&quot;)
+### Abschluss
+print(f&quot;Es wurden {len(pc)} Primzahlen gefunden&quot;)
+end = perf_counter()
+print(f&quot;Performance: {round(end - start,6)} Sec&quot;)
 </code></pre>
-<p>Download: Download: <a href="../../examples/scripts/excel2db.py">excel2db.py</a></p>
-<ul>
-<li>Es erstellt (falls nötig) die Tabelle <code>shares</code> mit den Spalten title, swx, price, dividend, volumeund monthly_income Verknüpfung mit der Datenbankdatei.</li>
-<li>Es lädt die Excel-Datei mit <code>openpyxl</code>, nimmt das aktive Tabellenblatt und iteriert ab Zeile 2 über alle Zeilenwerte ( values_only=True).</li>
-<li>Für jede Zeile werden die Werte auf Variablen verteilt, der Header zur Sicherheit übersprungen, die numerischen Felder in float bzw. int umgewandelt und per REPLACE INTOin die Tabelle geschrieben (vorhandene Zeilen mit demselben <code>title</code> werden überschrieben).</li>
-<li>Am Ende werden die Änderungen mit <code>commit</code> gespeichert, die Verbindung geschlossen und ausgegeben, wie viele Datensätze geschrieben wurden.</li>
+<p>Download: <a href="../../examples/performance/process_single.py">process_single.py</a></p>
+<p>Detaillierte Erklärung:</p>
+<ol>
+<li>Import und Initialisierung:<ul>
+<li>Es importiert <code>perf_counter</code> aus dem <code>time</code>-Modul zur Zeitmessung.</li>
+<li>Eine leere Liste <code>pc</code> wird initialisiert, um die gefundenen Primzahlen zu speichern.</li>
 </ul>
+</li>
+<li>Die Funktion <code>primrechner(ps, pe)</code>:<ul>
+<li>Diese Funktion sucht Primzahlen im Bereich von <code>ps</code> (start) bis <code>pe</code> (end).</li>
+<li>Sie gibt den Suchbereich aus.</li>
+<li>Der Algorithmus funktioniert wie folgt:<ul>
+<li>Es durchläuft alle Zahlen im angegebenen Bereich.</li>
+<li>Jede Zahl wird zunächst der Liste pc hinzugefügt.</li>
+<li>Dann wird geprüft, ob die Zahl durch eine kleinere Zahl (außer 1) teilbar ist.</li>
+<li>Wenn eine Teilbarkeit gefunden wird, ist die Zahl keine Primzahl und wird aus pc entfernt.</li>
+<li>Der break-Befehl beendet die innere Schleife, sobald ein Teiler gefunden wurde.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Hauptprogrammablauf:<ul>
+<li>Die Startzeit wird mit <code>perf_counter()</code> gemessen.</li>
+<li>Die primrechner-Funktion wird aufgerufen, um Primzahlen im Bereich von 1 bis 30000 zu finden.</li>
+<li>Nach Abschluss der Berechnung wird die Anzahl der gefundenen Primzahlen (Länge der Liste pc) ausgegeben.</li>
+<li>Die Endzeit wird gemessen und die Gesamtlaufzeit berechnet.</li>
+</ul>
+</li>
+<li>Ausgabe:<ul>
+<li>Das Programm gibt die Anzahl der gefundenen Primzahlen aus.</li>
+<li>Es zeigt auch die Laufzeit des Programms in Sekunden an.</li>
+</ul>
+</li>
+</ol>
 
 
 
