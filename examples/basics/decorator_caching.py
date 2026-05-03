@@ -22,4 +22,4 @@ for i in range(40):
     print(fibonacci(i))
 end = perf_counter()
 
-print("Runtime:", end - start, "Sec")
+print("Runtime:", round(end - start,6), "Sec")
