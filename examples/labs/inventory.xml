@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+  <!--Server inventory data-->
+  <inventory>
+    <server name="petersm5.home">
+      <name>petersm5.home</name>
+      <nbcpu>10</nbcpu>
+      <system>Darwin</system>
+      <release>25.5.0</release>
+      <osfam>posix</osfam>
+      <machine>arm64</machine>
+      <timestamp>1782320082</timestamp>
+    </server>
+  </inventory>
