@@ -1,13 +1,13 @@
-#!/usr/local/bin/python3
 ##############################################
 #
-# Name: Beispiel_xml_read_file.py
+# Name: xml_read.py
 #
 # Author: Peter Christen
 #
-# Version: 1.0
+# Version: 1.1
 # 
-# Date: 10.07.2017
+# Date: 10.07.2017 V1.0
+#       24.06.2026 V1.1 Anpassungen
 #
 # Purpose: Einlesen eines XML-Files
 #
@@ -15,10 +15,10 @@
 
 import xml.dom.minidom
 
-####Datei einlesen
-doc = xml.dom.minidom.parse("inventar.xml")
+#### Read the file
+doc = xml.dom.minidom.parse("inventory.xml")
 
-####XML-Daten analysieren
+#### Analyse the XML data
 servers = doc.getElementsByTagName("server")
 for server in servers:
         name = server.getAttribute("name")

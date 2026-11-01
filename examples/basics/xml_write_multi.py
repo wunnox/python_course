@@ -15,46 +15,46 @@
 
 import xml.dom.minidom
 
-###Erste Stuffe erstellen
+### Creating the first level
 doc = xml.dom.minidom.Document()
-doc.appendChild(doc.createComment("Inventardaten von Server Andromeda"))
-erste_stuffe = doc.createElement("inventar")
-doc.appendChild(erste_stuffe)
- 
-###Zweite Stuffe erstellen
-zweite_stuffe = doc.createElement("server")
-zweite_stuffe.setAttribute( "name", 'raspberryshake' )
-erste_stuffe.appendChild(zweite_stuffe)
+doc.appendChild(doc.createComment('Inventory data from Server Andromeda'))
+first_level = doc.createElement('inventory')
+doc.appendChild(first_level)
 
-###Datenelemente erstellen
-data = {'nrcpu':'10','release':'16.5.0','system':'Darwin','osfam':'posix','machine':'arm64','timestamp':'1782320082'}
-for name,value in data.items():
-   # Element erstellen
+### Create the second level                                              
+second_level = doc.createElement('server')
+second_level.setAttribute( 'name', "Andromeda" )
+first_level.appendChild(second_level)
+
+### Create data elements
+data = {"nrcpu":"10","release":"16.5.0","system":"Darwin","osfam":"posix","machine":"arm64","timestamp":"1782320082"}
+for name, value in data.items():
+   # Create element
    element_name = doc.createElement(name)
-   zweite_stuffe.appendChild(element_name)
- 
-   # Element Wert hinzufügen
-   element_wert = doc.createTextNode(value)
-   element_name.appendChild(element_wert)
+   second_level.appendChild(element_name)
 
-###Zweite Stuffe erstellen
-zweite_stuffe = doc.createElement("server")
-zweite_stuffe.setAttribute( "name", 'UM00365' )
-erste_stuffe.appendChild(zweite_stuffe)
+   # Add element value
+   element_value = doc.createTextNode(value)
+   element_name.appendChild (element_value)
+
+### Create the second level                                              
+second_level = doc.createElement('server')
+second_level.setAttribute( 'name', "UM00365" )
+first_level.appendChild(second_level)
 
 ###Datenelemente erstellen
 data = {'nrcpu':'4','release':'16.5.0','system':'Darwin','osfam':'posix','machine':'x86_64','timestamp':'1499540600'}
 for name,value in data.items():
-   # Element erstellen
+   # Create element
    element_name = doc.createElement(name)
-   zweite_stuffe.appendChild(element_name)
- 
-   # Element Wert hinzufügen
-   element_wert = doc.createTextNode(value)
-   element_name.appendChild(element_wert)
- 
-###Daten in File schreiben
-doc.writexml( open('inventar.xml', 'w'),
+   second_level.appendChild(element_name)
+
+   # Add element value
+   element_value = doc.createTextNode(value)
+   element_name.appendChild (element_value)
+
+### Write data to file
+doc.writexml( open('inventory.xml', 'w'),
    indent="  ",
    addindent="  ",
    newl='\n')

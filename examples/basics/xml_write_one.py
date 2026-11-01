@@ -1,4 +1,3 @@
-#!/usr/local/bin/python3
 ##############################################
 #
 # Name: Beispiel_xml_write_file.py
@@ -13,33 +12,33 @@
 #
 ##############################################
 
-import xml.dom.minidom
+import xml.dom.minidom                  
 
-###Erste Stufe erstellen
+### Creating the first level
 doc = xml.dom.minidom.Document()
-doc.appendChild(doc.createComment("Inventardaten von Server Andromeda"))
-erste_stuffe = doc.createElement("inventar")
-doc.appendChild(erste_stuffe)
- 
-###Zweite Stufe erstellen
-zweite_stuffe = doc.createElement("server")
-zweite_stuffe.setAttribute( "name", 'Andromeda' )
-erste_stuffe.appendChild(zweite_stuffe)
+doc.appendChild(doc.createComment('Inventory data from Server Andromeda'))
+first_level = doc.createElement('inventory')
+doc.appendChild(first_level)
 
-###Datenelemente erstellen
-data = {'nrcpu':'10','release':'16.5.0','system':'Darwin','osfam':'posix','machine':'arm64','timestamp':'1782320082'}
-for name,value in data.items():
-   # Element erstellen
+### Create the second level                                              
+second_level = doc.createElement('server')
+second_level.setAttribute( 'name', "Andromeda" )
+first_level.appendChild(second_level)
+
+###Create data elements
+data = {"nrcpu":"10","release":"16.5.0","system":"Darwin","osfam":"posix","machine":"arm64","timestamp":"1782320082"}
+for name, value in data.items():
+   # Create element
    element_name = doc.createElement(name)
-   zweite_stuffe.appendChild(element_name)
- 
-   # Element Wert hinzufügen
-   element_wert = doc.createTextNode(value)
-   element_name.appendChild(element_wert)
- 
-###Daten in File schreiben
-doc.writexml( open('inventar.xml', 'w'),
+   second_level.appendChild(element_name)
+
+   # Add element value
+   element_value = doc.createTextNode(value)
+   element_name.appendChild (element_value)
+
+###Write data to file
+doc.writexml( open("inventory.xml", "w"),
    indent="  ",
    addindent="  ",
-   newl='\n')
+   newl="\n")
 doc.unlink()
